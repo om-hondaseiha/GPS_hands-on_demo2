@@ -17,6 +17,7 @@ function buttonClick(){
   glassType = parseInt(faceTypeValue) * 2 + parseInt(favoriteValue);
   diagnosis.style.backgroundImage = 'url(img/glass-' + glassType + '.png)';
   diagnosis.style.border = '1px solid #000';
+  glassName.innerHTML = '結果は...メガネ' + glassType + '!!';
 }
 
 let faceType = document.getElementsByName('face_type');
@@ -27,5 +28,6 @@ let favoriteLength = favorite.length;
 
 let checkButton = document.getElementById('check');
 let diagnosis = document.getElementById('diagnosis');
+let glassName = document.getElementById('glass_name');
 
 checkButton.addEventListener('click', buttonClick);

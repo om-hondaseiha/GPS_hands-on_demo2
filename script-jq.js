@@ -26,4 +26,5 @@ $('#check').on("click", function(){
     'background-image' : 'url(img/glass-' + glassType + '.png)',
     'border' : '1px solid #000'
   });
+  $('#glass_name').html('結果は...メガネ' + glassType + '!!');
 });
