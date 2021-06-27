@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OWNDAYSさんの似合うメガネ診断（デモ）</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1><span>OWNDAYS</span>さんの似合うメガネ診断</h1>
+    <section>
+      <h3>顔の輪郭のタイプは？</h3>
+      <div>
+        <label><input type="radio" name="face_type" value="0" checked>丸顔<br></label>
+        <label><input type="radio" name="face_type" value="1">四角形<br></label>
+        <label><input type="radio" name="face_type" value="2">三角形<br></label>
+        <label><input type="radio" name="face_type" value="3">面長顔<br></label>
+      </div>
+    </section>
+    <section>
+      <h3>メガネの好みは？</h3>
+      <div>
+        <label><input type="radio" name="favorite" value="0" checked>かっこいい系<br></label>
+        <label><input type="radio" name="favorite" value="1">かわいい系<br></label>
+      </div>
+    </section>
+    <button id="check">診断する！</button>
+    <div id="diagnosis"></div>
+  </main>
+  <!-- jQueryあり/なしどっちも用意しております。 -->
+  <!-- <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="script-jq.js"></script> -->
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
