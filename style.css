@@ -3,36 +3,81 @@
   padding: 0;
   box-sizing: border-box;
 }
+.pink-button {
+  display: block;
+  width: 300px;
+  padding: 10px 0;
+  margin: 0 auto;
+  border: 3px solid #d68cce;
+  border-radius: 10px;
+  color: #d68cce;
+  font-weight: bold;
+  font-size: 24px;
+}
+
 main {
-  width: 600px;
+  width: 840px;
   margin: 50px auto;
+}
+#top {
+  text-align: center;
+  margin-bottom: 400px;
+}
+#top section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
   font-size: 32px;
-  margin-bottom: 30px;
+}
+#logo {
+  width: 300px;
+  height: auto;
+}
+#top > img {
+  display: block;
+  width: 450px;
+  height: auto;
+  margin: 0 auto 50px;
+}
+
+#questions {
   text-align: center;
+  margin-bottom: 400px;
 }
-h1 span {
-  font-size: 40px;
-  margin-right: 10px;
+#questions section {
+  margin-bottom: 50px;
 }
-section {
+#questions h3 {
+  font-size: 28px;
   margin-bottom: 20px;
 }
-section h3 {
-  font-size: 28px;
+.choices {
+  display: flex;
+  justify-content: space-between;
 }
-section label {
-  font-size: 20px;
-}
-section label input {
-  margin-right: 10px;
-}
-#check {
+.choices label {
   display: block;
+  width: 160px;
+  padding: 10px 0;
+  margin: 0 auto;
+  border: 3px solid #37c7a7;
+  border-radius: 10px;
+  color: #37c7a7;
+  font-weight: bold;
   font-size: 24px;
-  margin: 0 auto 100px;
+  transition: all 1s ease-in-out;
 }
+.choices input {
+  width: 0;
+  opacity: 0;
+}
+.choices label.selected {
+  background-color: #37c7a7;
+  color: #fff;
+}
+
 #diagnosis {
   width: 100%;
   height: 300px;
