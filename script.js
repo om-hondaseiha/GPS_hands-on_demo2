@@ -44,7 +44,7 @@ $('#check').click(function(event){
 
   $('.diagnosis').removeClass('show');
   $('body, html').animate({
-    scrollTop: 2000
+    scrollTop: 2050
   }, 800);
   event.preventDefault();
 
