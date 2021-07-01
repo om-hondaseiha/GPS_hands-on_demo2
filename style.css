@@ -16,12 +16,13 @@
 }
 
 main {
-  width: 840px;
-  margin: 50px auto;
+  width: 960px;
+  margin: 50px auto 400px;
 }
 #top {
+  width: 840px;
+  margin: 0 auto 400px;
   text-align: center;
-  margin-bottom: 400px;
 }
 #top section {
   display: flex;
@@ -31,7 +32,7 @@ main {
 h1 {
   font-size: 32px;
 }
-#logo {
+#owndays-logo {
   width: 300px;
   height: auto;
 }
@@ -43,8 +44,9 @@ h1 {
 }
 
 #questions {
+  width: 840px;
+  margin: 0 auto 400px;
   text-align: center;
-  margin-bottom: 400px;
 }
 #questions section {
   margin-bottom: 50px;
@@ -67,7 +69,7 @@ h1 {
   color: #37c7a7;
   font-weight: bold;
   font-size: 24px;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .choices input {
   width: 0;
@@ -78,15 +80,60 @@ h1 {
   color: #fff;
 }
 
-#diagnosis {
-  width: 100%;
-  height: 300px;
-  margin-bottom: 20px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.diagnosis {
+  display: none;
+  border: 3px solid #aaa;
+  padding: 10px;
 }
-#glass_name {
-  font-size: 28px;
-  text-align: center;
+.diagnosis.show {
+  display: block;
+}
+.diagnosis h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.introduction {
+  display: flex;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+#amber .introduction {
+  align-items: center;
+}
+.introduction > img {
+  width: 225px;
+  height: 225px;
+  margin-right: 20px;
+}
+.introduction-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.introduction-title img {
+  width: 225px;
+  height: auto;
+  margin-right: -25px;
+}
+#niche-logo {
+  width: 350px;
+  margin: 0 -80px;
+}
+.introduction-title h4 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.introduction p {
+  font-size: 16px;
+}
+
+.lineup {
+  display: flex;
+  padding: 0 90px;
+  justify-content: space-between;
+}
+.lineup img {
+  display: block;
+  width: 225px;
+  height: auto;
 }
