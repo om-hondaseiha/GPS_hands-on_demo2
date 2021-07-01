@@ -13,7 +13,12 @@
   color: #d68cce;
   font-weight: bold;
   font-size: 24px;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
+}
+.pink-button:hover {
+  background-color: #d68cce;
+  color: #fff;
 }
 
 main {
