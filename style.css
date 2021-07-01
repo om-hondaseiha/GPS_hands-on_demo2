@@ -13,6 +13,7 @@
   color: #d68cce;
   font-weight: bold;
   font-size: 24px;
+  cursor: pointer;
 }
 
 main {
@@ -70,6 +71,7 @@ h1 {
   font-weight: bold;
   font-size: 24px;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 .choices input {
   width: 0;
