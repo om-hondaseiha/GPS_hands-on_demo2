@@ -49,18 +49,24 @@ $('#check').click(function(event){
   event.preventDefault();
 
   if(importanceValue == 0){
+    // importanceValue == 0 → Q3が「機能性」
     if(favoriteValue == 0){
+      // favoriteValue == 0 → Q2が「ベーシック」
       $('#air_ultem').addClass('show');
     } else if(favoriteValue == 1){
+      // favoriteValue == 1 → Q2が「モード」
       $('#graph_belle').addClass('show');
     } else if(favoriteValue == 2){
+      // favoriteValue == 2 → Q2が「個性的」
       $('#niche').addClass('show');
     } else if(favoriteValue == 3){
-      $('#calmo').addClass('show');
+      // favoriteValue == 3 → Q2が「クラシカル」
+      $('#senichisaku').addClass('show');
     }
   } else if(importanceValue == 1){
+    // importanceValue == 1 → Q3が「デザイン性」
     if(favoriteValue == 0){
-      $('#calmo').addClass('show');
+      $('#senichisaku').addClass('show');
     } else if(favoriteValue == 1){
       $('#graph_belle').addClass('show');
     } else if(favoriteValue == 2){
@@ -69,22 +75,24 @@ $('#check').click(function(event){
       $('#air_ultem_classic').addClass('show');
     }
   } else if(importanceValue == 2){
+    // importanceValue == 2 → Q3が「肌の負担」
     if(favoriteValue == 0){
       $('#fuwa_cellu').addClass('show');
     } else if(favoriteValue == 1){
       $('#air_ultem_classic').addClass('show');
     } else if(favoriteValue == 2){
-      $('#amber').addClass('show');
+      $('#john_dillinger').addClass('show');
     } else if(favoriteValue == 3){
       $('#fuwa_cellu').addClass('show');
     }
   } else if(importanceValue == 3){
+    // importanceValue == 3 → Q3が「軽量」
     if(favoriteValue == 0){
-      $('#amber').addClass('show');
+      $('#john_dillinger').addClass('show');
     } else if(favoriteValue == 1){
       $('#air_ultem_classic').addClass('show');
     } else if(favoriteValue == 2){
-      $('#air_ultem').addClass('show');
+      $('#niche').addClass('show');
     } else if(favoriteValue == 3){
       $('#air_ultem_classic').addClass('show');
     }
